@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="31.983">
+  <properties />
+  
+  
+            <testcase name="searchAndOpenItem" time="6.843" classname="ApplicationTestCases.LoginPageTestcase" />
+                <testcase name="logOut" time="6.516" classname="ApplicationTestCases.LoginPageTestcase" />
+                <testcase name="login" time="12.677" classname="ApplicationTestCases.LoginPageTestcase" />
+                <testcase name="searchingText" time="5.947" classname="ApplicationTestCases.LoginPageTestcase" />
+      
+</testsuite>

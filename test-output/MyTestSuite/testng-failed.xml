@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [MyTestSuite]">
+  <listeners>
+    <listener class-name="rpugh.CustomListener"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="MyTest1(failed)">
+    <classes>
+      <class name="rpugh.TestReader">
+        <methods>
+          <include name="setUp"/>
+          <include name="testLogin" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- rpugh.TestReader -->
+    </classes>
+  </test> <!-- MyTest1(failed) -->
+</suite> <!-- Failed suite [MyTestSuite] -->

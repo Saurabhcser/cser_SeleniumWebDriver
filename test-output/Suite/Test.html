@@ -1,0 +1,196 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/1</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jul 14 17:15:50 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>15 seconds (15762 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='ApplicationTestCases.LoginPageTestcase.login()'><b>login</b><br>Test class: ApplicationTestCases.LoginPageTestcase<br/>
+<a href="#Output-2047025284" onClick='toggleBox("Output-2047025284", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2047025284" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2047025284">
+Login failed with Error message: Please enter valid Email ID/Mobile number<br/>
+screenshot file location and name is C:\Users\sauron\workspace-mars\webDriverTestingMaven\src\test\resources\ScreenShots\2021-7-14 17-15-52.png<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [My Account] but found [Login]
+	at ApplicationTestCases.LoginPageTestcase.login(LoginPageTestcase.java:31)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2047025284", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2047025284'><pre>java.lang.AssertionError: expected [My Account] but found [Login]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at ApplicationTestCases.LoginPageTestcase.login(LoginPageTestcase.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>1</td>
+<td>ApplicationTestCases.LoginPageTestcase@91161c7</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='ApplicationTestCases.LoginPageTestcase.searchAndOpenItem()'><b>searchAndOpenItem</b><br>Test class: ApplicationTestCases.LoginPageTestcase<br/>
+<a href="#Output-1558494516" onClick='toggleBox("Output-1558494516", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1558494516" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1558494516">
+Clicking 6th item to open: Flipkart SmartBuy M4D12B Runtime : 60 min Cordless USB ...<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>ApplicationTestCases.LoginPageTestcase@91161c7</td></tr>
+<tr>
+<td title='ApplicationTestCases.LoginPageTestcase.searchingText()'><b>searchingText</b><br>Test class: ApplicationTestCases.LoginPageTestcase<br/>
+<a href="#Output-1002752905" onClick='toggleBox("Output-1002752905", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1002752905" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1002752905">
+These are the Top20 results based on search text: trimmer<br/>
+NOVA NHT 1076 Runtime: 30 min Trimmer for Men<br/>
+NOVA Prime Series NHT 1087 Turbo power Runtime: 120 mi...<br/>
+Mi XXQ02HM Runtime: 60 min Trimmer for Men<br/>
+PHILIPS BT1232/15 Runtime: 30 mins Trimmer for Men<br/>
+NOVA NHT 1073-00 USB Runtime: 60 min Trimmer for Men<br/>
+Flipkart SmartBuy M4D12B Runtime : 60 min Cordless USB ...<br/>
+PHILIPS MG3747/15 Runtime: 70 min Trimmer for Men<br/>
+NOVA NG 1145 Runtime: 60 min Trimmer for Men<br/>
+Flipkart SmartBuy M4D12Q Runtime : 60 min Cordless USB ...<br/>
+Syska HT200U Runtime: 40 min Trimmer for Men<br/>
+VGR V-071 Cordless Professional Hair Clipper Runtime: ...<br/>
+VGR V-183 Professional Rechargeable Hair Clipper Runti...<br/>
+PHILIPS BT3101/15 Runtime: 45 min Trimmer for Men<br/>
+HAVELLS bt5113c Runtime: 120 min Trimmer for Men<br/>
+NOVA NG 1153 Digital USB Runtime: 160 Mins Trimmer for...<br/>
+NOVA NHT 1099 Runtime: 90 min Trimmer for Men<br/>
+NOVA Prime Series NHT 1085 Runtime: 45 min Trimmer for...<br/>
+Abgrow Hair Beard Moustache Electric Trimmer for Men Ha...<br/>
+Syska HT900 Runtime: 120 min Trimmer for Men<br/>
+KUBRA KB-8000 IPX6 Waterproof Cordless Fast Charging Sl...<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>ApplicationTestCases.LoginPageTestcase@91161c7</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='ApplicationTestCases.LoginPageTestcase.logOut()'><b>logOut</b><br>Test class: ApplicationTestCases.LoginPageTestcase</td>
+<td><div><pre>java.lang.Throwable: Method LoginPageTestcase.logOut()[pri:4, instance:ApplicationTestCases.LoginPageTestcase@91161c7] depends on not successfully finished methods
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1245580767", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1245580767'><pre>java.lang.Throwable: Method LoginPageTestcase.logOut()[pri:4, instance:ApplicationTestCases.LoginPageTestcase@91161c7] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1068)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+</body>
+</html>

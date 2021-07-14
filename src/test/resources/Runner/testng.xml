@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="3" parallel="methods">
+
+<listeners>
+        <listener class-name="CustomListeners.CustomListener"/>
+      
+  </listeners>
+  
+  
+  <test name="Test">
+    <classes>
+      <class name="ApplicationTestCases.LoginPageTestcase">
+      			<methods>
+      				  <include name="login">  </include> 
+      				 <include name="searchingText">  </include> 
+      				  <include name="searchAndOpenItem">  </include> 
+					  <include name="logOut">  </include>   
+      
+      			</methods>
+      	</class>
+    </classes>
+  </test>  
+  
+  
+ 
+  
+  
+</suite> 
